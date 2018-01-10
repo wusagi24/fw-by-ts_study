@@ -1,0 +1,26 @@
+<ul class="filters">
+  <li>
+    <a
+      :class="(filter === FilterType.ALL) ? 'selected' : ''"
+      @click="switchFilter(FilterType.ALL)"
+      href="#/">
+      All
+    </a>
+  </li>
+  <li>
+    <a
+      :class="(filter === FilterType.ACTIVE) ? 'selected' : ''"
+      @click="switchFilter(FilterType.ACTIVE)"
+      href="#/active">
+      Active
+    </a>
+  </li>
+  <li>
+    <a
+      :class="(filter === FilterType.COMPLETED) ? 'selected' : ''"
+      @click="switchFilter(FilterType.COMPLETED)"
+      href="#/completed">
+      Completed
+    </a>
+  </li>
+</ul>

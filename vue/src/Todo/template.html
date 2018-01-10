@@ -1,0 +1,23 @@
+<!-- These are here just to show the structure of the list items -->
+<!-- List items should get the class `editing` when editing and `completed` when marked as completed -->
+<li :class="{ completed: todo.isCompleted, editing: isEditing }">
+  <div class="view">
+    <input
+      :checked="todo.isCompleted"
+      @change="toggleCompleted"
+      class="toggle"
+      type="checkbox">
+    <label
+      @dblclick="editText">
+      {{ todo.text }}
+    </label>
+    <button @click.stop="deleteTodo" class="destroy"></button>
+  </div>
+  <input
+    v-model="todo.text"
+    @blur="updateText"
+    @keyup.enter="updateText"
+    @keyup.esc="cancelEdit"
+    type="text"
+    class="edit">
+</li>
