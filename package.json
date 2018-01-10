@@ -10,6 +10,7 @@
     "typescript": "^2.6.1"
   },
   "scripts": {
-    "server": "http-server"
+    "server": "http-server",
+    "lint:vue": "tslint -c ./tslint.vue.json ./vue/src/**/*.ts"
   }
 }
