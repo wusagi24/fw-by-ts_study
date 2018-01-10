@@ -1,0 +1,25 @@
+{
+  "name": "vue-ts-todo",
+  "version": "1.0.0",
+  "author": "nishi wusagi <wusagi24@lunalabo.net>",
+  "license": "MIT",
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.2.3",
+    "css-loader": "^0.28.7",
+    "source-map-loader": "^0.2.2",
+    "typescript": "^2.5.3",
+    "vue-loader": "^13.0.5",
+    "vue-template-compiler": "^2.4.4",
+    "webpack": "^3.6.0"
+  },
+  "dependencies": {
+    "todomvc-app-css": "^2.1.0",
+    "todomvc-common": "^1.0.4",
+    "vue": "^2.4.4",
+    "vue-class-component": "^5.0.2"
+  },
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack -w"
+  }
+}
