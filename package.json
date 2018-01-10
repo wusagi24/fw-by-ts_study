@@ -2,5 +2,14 @@
   "name": "fw-by-ts_study",
   "version": "1.0.0",
   "author": "nishi wusagi <wusagi24@lunalabo.net>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.10.0",
+    "tslint": "^5.7.0",
+    "tslint-config-airbnb": "^5.3.0",
+    "typescript": "^2.6.1"
+  },
+  "scripts": {
+    "server": "http-server"
+  }
 }
