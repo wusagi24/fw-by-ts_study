@@ -7,10 +7,12 @@
     "http-server": "^0.10.0",
     "tslint": "^5.7.0",
     "tslint-config-airbnb": "^5.3.0",
+    "tslint-react": "^3.2.0",
     "typescript": "^2.6.1"
   },
   "scripts": {
     "server": "http-server",
-    "lint:vue": "tslint -c ./tslint.vue.json ./vue/src/**/*.ts"
+    "lint:vue": "tslint -c ./tslint.vue.json ./vue/src/**/*.ts",
+    "lint:react": "tslint -c ./tslint.react.json ./react/src/**/*.ts{,x}"
   }
 }
